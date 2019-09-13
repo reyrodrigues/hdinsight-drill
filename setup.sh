@@ -20,6 +20,9 @@ tar -xzvf $DRILLDIR.tar.gz
 mkdir -p /var/lib/drill/$DRILLDIR/jars/3rdparty
 cd /var/lib/drill/$DRILLDIR/jars/3rdparty
 
+cp /usr/hdp/*/hadoop/lib/hadoop-lzo*.jar .
+cp /usr/lib/hdinsight-logging/mdsdclient-*.jar .
+
 wget http://central.maven.org/maven2/org/apache/hadoop/hadoop-azure/2.7.1/hadoop-azure-2.7.1.jar
 wget http://central.maven.org/maven2/com/microsoft/azure/azure-storage/2.0.0/azure-storage-2.0.0.jar
 
